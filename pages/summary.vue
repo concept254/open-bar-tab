@@ -8,13 +8,7 @@
         {{ (order.quantity * order.beverage.price).toFixed(2) }}
       </p>
     </div>
-
-    <!-- Total -->
     <p>Total: <b> R {{ total.toFixed(2) }}</b></p>
-
-    </hr>
-
-    <!-- Split Bill Section -->
     <h3>Split Bill</h3>
     <div class="description">
         <p>
@@ -28,8 +22,6 @@
       min="1"
     />
     <p v-if="splitCount > 1">Per Person: R {{ perPersonTotal.toFixed(2) }}</p>
-
-    <!-- Export Buttons -->
     <div class="button-group">
         <button @click="exportToCSV">Export as CSV</button>
         <button @click="exportToPDF">Export as PDF</button>

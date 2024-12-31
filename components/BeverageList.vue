@@ -19,11 +19,11 @@ import { ref } from "vue";
 import { useBeverage } from "@/composables/useBeverage";
 import { useTab } from "@/composables/useTab";
 
-// Get the list of beverages and the shared tab state
+// Get the list of beverages
 const beverages = useBeverage();
 const tab = useTab();
 
-// Reactive object to track quantities for each beverage
+// Track quantities for each beverage
 const quantities = ref({});
 
 // Function to add beverages to the tab

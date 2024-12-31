@@ -8,11 +8,7 @@
         {{ (order.quantity * order.beverage.price).toFixed(2) }}
       </p>
     </div>
-
-    <!-- Display total -->
     <p>Total: R {{ total.toFixed(2) }}</p>
-
-    <!-- Input for splitting the bill -->
     <input
       type="number"
       v-model.number="splitCount"
@@ -21,8 +17,6 @@
     <p v-if="splitCount > 1">
       Per Person: R {{ (total / splitCount).toFixed(2) }}
     </p>
-
-    <!-- Export button -->
     <button @click="exportTab">Export Tab</button>
   </div>
 </template>

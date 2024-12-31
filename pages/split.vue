@@ -17,7 +17,7 @@ import { navigateTo } from "nuxt/app";
 const splitCount = ref(1);
 
 const goToSummary = () => {
-  // Pass split count as query parameter
+  // Pass split count 
   navigateTo({
     path: "/summary",
     query: { splitCount: splitCount.value },
