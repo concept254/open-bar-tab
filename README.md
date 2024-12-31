@@ -1,13 +1,14 @@
 # Open Bar Tab
+This is a bar tab application in Vue/Nuxt which is used to track a patrons orders and bills
 
 ## Features
-- Select beverages and quantities
-- Add to tab
-- Split bill among people
+- A patron selects the beverages and quantities they want
+- Then add the selection to a tab
+- They will be redirected to a summary of the tab where they can split bill amongest the patrons
 - Export tab as CSV or PDF
 
 ## Installation
-1. Clone the repository.
+1. Clone the repository from https://github.com/concept254/open-bar-tab
 2. Run `npm install` to install dependencies.
 3. Run `npm run dev` to start the development server.
 
